@@ -1,0 +1,328 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container,
+.header,
+.name,
+.tab,
+.tab li,
+.tab a,
+.content,
+.mytitle h3,
+.intro h2,
+.description,
+.buttons,
+.projectbtn,
+.linkbtn,
+.ProjectPage,
+.projcont1,
+.projcont2,
+.projcont3,
+.viewprojbtn1,
+.viewprojbtn2,
+.viewprojbtn3,
+.projcont1 p,
+.projcont2 p,
+.projcont3 p,
+.projcont1 h1,
+.projcont2 h1,
+.projcont3 h1,
+.socials,
+.end {
+    font-family: 'Roboto', sans-serif; 
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-left: 80px;
+    padding: 0 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.name a{
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+.tab {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tab li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    
+}
+.tab a {
+    text-decoration: none;
+    color: black;
+    position: relative; 
+}
+
+.tab a::after {
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    bottom: -6px;
+    width: 100%; 
+    height: 1px; 
+    background-color: transparent; 
+    transition: background-color 0.6s;
+}
+
+.tab a:hover::after {
+    background-color: black;
+}
+
+.content {
+    width: 30%; 
+    margin-left: 80px;
+    padding: 20px;
+}
+
+.mytitle h3 {
+    font-size: 24px; 
+    margin-bottom: 10px; 
+    color: rgba(236, 159, 57, 0.685);
+}
+
+.intro h2 {
+    font-size: 40px; 
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 21px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin-left: 0;
+    max-width: 850px;
+}
+
+.buttons {
+    display: flex;
+    width: 10%;
+    justify-content: left;
+    margin-top: 20px;
+    padding: 20px;
+    margin-left: -4.5%;
+    margin-right: auto;
+}
+
+.projectbtn {
+    display: inline-block;
+    margin-right: 20px; 
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: rgba(236, 159, 57, 0.685);
+    transition: border-radius 0.6s ease-in-out, background-color 0.6s ease-in-out;
+}
+.linkbtn{
+    display: inline-block;
+    margin-right: 20px; 
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.562);
+    transition: border-radius 0.6s ease-in-out, background-color 0.6s ease-in-out;
+}
+
+.projectbtn:last-child,
+.linkbtn:last-child {
+    margin-right: 0;
+}
+
+.projectbtn:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.linkbtn:hover {
+    border: none;
+    transform: scale(1.2);
+    transition: transform 0.4s, background-color 0.5s;
+    color: white;
+    background-color: rgba(40, 116, 187, 0.562);
+}
+
+.buttons h2 {
+    margin: 0;
+}
+/*PROJECT CONTENT SETTINGS*/
+.ProjectPage {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.projcont1,
+.projcont2,
+.projcont3 {
+    margin-top: 50px; 
+    width: 60%; 
+    height: 350px; 
+    box-sizing: content-box;
+    border: transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    
+}
+/*PROJECT CONT BUTTON EDIT*/
+.viewprojbtn1, .viewprojbtn2, .viewprojbtn3{
+    display: inline-block;
+    font-size: 10px;
+    margin-right: 20px;
+    margin-left: 85px; 
+    border: 2px solid black; 
+    color: black;
+    padding: 1px 30px;
+    border-radius: 50px; 
+    background-color: transparent;
+    transition: border-radius 0.6s, background-color 0.6s;
+}
+.viewprojbtn1:hover, .viewprojbtn2:hover, .viewprojbtn3:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+/*PROJECTCONT P EDIT*/
+.ProjectPage a {
+    position: relative;
+    text-decoration: none;
+    
+}
+
+.ProjectPage a::after {
+    content: '';
+    position: absolute; 
+    left: 14%;
+    top: 130%;
+    bottom: -2px; 
+    width: 70%; 
+    height: 4px;
+    background-color:rgba(236, 159, 57, 0.685);
+}
+.projcont1 p , .projcont2 p, .projcont3 p{
+    font-size: 25px;
+    line-height: 1.6;
+    width: 42%;
+    margin-left:90px;
+}
+.projcont1 h1, .projcont2 h1, .projcont3 h1{
+    margin-left: 90px;
+    text-align: left;
+}
+.projcont1,.projcont2,.projcont3{
+    text-align: left;
+}
+/*ICON  FOOTER SETTINGS*/
+.icon{
+    width: 60px; 
+    height: 60px;
+}
+.icon {
+    transform: translateY(-5%);
+}
+.icon-large {
+    width: 60px; 
+    height: 51px; 
+    position: relative;
+    bottom: 0; 
+    transform: translateY(-4.6%);
+}
+.icon-small {
+    width: 60px; 
+    height: 66px; 
+    position: relative; 
+    bottom: 0; 
+    transform: translateY(-2%); 
+}
+.icon,
+.icon-large,
+.icon-small {
+    margin-right: 10px; 
+}
+.socials {
+    width: 100%;
+    height: auto; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    margin: 70px auto 0; 
+    
+}
+
+.end{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.377);
+}
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tab li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-left: auto;
+    }
+
+    .projectbtn,
+    .linkbtn {
+        flex: 0 0 100%; 
+        margin: 10px 0;
+        margin-left: auto;
+    }
+    .ProjectPage {
+        margin-top: 50px;
+    }
+
+    .projcont1 p,
+    .projcont2 p,
+    .projcont3 p,
+    .projcont1 h1,
+    .projcont2 h1,
+    .projcont3 h1 {
+        width: 90%; 
+        margin-left: 0; 
+    }
+
+    .icon-large {
+        transform: translateY(-10%);
+    }
+
+    .socials {
+        margin: 30px auto 0;
+    }
+}
